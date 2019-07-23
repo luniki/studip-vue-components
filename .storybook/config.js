@@ -6,4 +6,6 @@ function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
 
+import "!style-loader!css-loader?url=false!../assets/stylesheets/studip-base.css"
+
 configure(loadStories, module);
