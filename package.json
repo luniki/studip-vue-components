@@ -16,6 +16,10 @@
     "dependencies": {
         "vue": "^2.6.10"
     },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:luniki/studip-vue-components.git"
+    },
     "scripts": {
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook"
