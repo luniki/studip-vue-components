@@ -1,18 +1,14 @@
 <template>
-    <tr>
-        <td v-for="(value, index) in values" :key="index">
-            {{ value }}
-        </td>
-    </tr>
+    <button>a link button</button>
 </template>
 
 <script>
 export default {
-    name: 'JTableRow',
+    name: 'LinkButton',
     props: {
         values: {
             type: Array,
-            required: true
+            required: false
         }
     }
 }
