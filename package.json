@@ -2,6 +2,9 @@
     "name": "@studip/vue-components",
     "version": "0.1.0",
     "private": false,
+    "publishConfig": {
+        "access": "public"
+    },
     "devDependencies": {
         "@babel/core": "^7.5.5",
         "@storybook/addon-actions": "^5.1.9",
