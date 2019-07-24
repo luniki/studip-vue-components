@@ -1,7 +1,38 @@
 {
     "name": "@studip/vue-components",
     "version": "0.1.0",
-    "private": false,
+    "description": "Vue components for Stud.IP",
+    "author": "luniki",
+    "license": "GPLv2",
+    "main": "dist/studip-vue-components.common.js",
+    "module": "dist/studip-vue-components.esm.js",
+    "unpkg": "dist/studip-vue-components.js",
+    "jsdelivr": "dist/studip-vue-components.js",
+    "sideEffects": false,
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:luniki/studip-vue-components.git"
+    },
+    "files": [
+        "src/*",
+        "dist/*"
+    ],
+    "keywords": [
+        "vue",
+        "components",
+        "stud.ip"
+    ],
+    "scripts": {
+        "storybook": "start-storybook -p 6006 -s ./assets",
+        "build-storybook": "build-storybook",
+        "build": "node build/build.js"
+    },
+    "bugs": {
+        "url": "https://github.com/luniki/studip-vue-components/issues"
+    },
+    "homepage": "https://github.com/luniki/studip-vue-components#readme",
+    "contributors": [],
+
     "publishConfig": {
         "access": "public"
     },
@@ -15,20 +46,11 @@
         "babel-preset-vue": "^2.0.2",
         "css-loader": "^3.1.0",
         "style-loader": "^0.23.1",
+        "vue": "^2.6.10",
         "vue-loader": "^15.7.1",
         "vue-template-compiler": "^2.6.10"
     },
-    "peerDependencies": {
-        "vue": "^2.6.10"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:luniki/studip-vue-components.git"
-    },
-    "scripts": {
-        "storybook": "start-storybook -p 6006 -s ./assets",
-        "build-storybook": "build-storybook"
-    },
+
     "eslintConfig": {
         "env": {
             "browser": true
