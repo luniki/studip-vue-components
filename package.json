@@ -1,6 +1,6 @@
 {
-    "name": "root",
-    "private": true,
+    "name": "@studip/vue-components",
+    "private": false,
     "devDependencies": {
         "@babel/core": "^7.5.5",
         "@storybook/addon-actions": "^5.1.9",
@@ -10,12 +10,11 @@
         "babel-loader": "^8.0.6",
         "babel-preset-vue": "^2.0.2",
         "css-loader": "^3.1.0",
-        "lerna": "^3.16.2",
         "style-loader": "^0.23.1",
         "vue-loader": "^15.7.1",
         "vue-template-compiler": "^2.6.10"
     },
-    "dependencies": {
+    "peerDependencies": {
         "vue": "^2.6.10"
     },
     "repository": {

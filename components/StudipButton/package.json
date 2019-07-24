@@ -1,8 +1,0 @@
-{
-    "name": "@studip/vue-component-button",
-    "version": "0.1.2",
-    "publishConfig": {
-        "access": "public"
-    },
-    "license": "GPLv2"
-}
