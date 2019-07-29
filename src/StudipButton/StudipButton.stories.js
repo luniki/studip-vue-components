@@ -3,6 +3,6 @@ import StudipButton from './StudipButton';
 
 storiesOf('StudipButton', module).add('normal', () => ({
     components: { StudipButton },
-    template: `<studip-button>Submit</studip-button>`,
+    template: `<studip-button name="submit">Submit</studip-button>`,
     data: () => ({})
 }));

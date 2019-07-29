@@ -1,5 +1,5 @@
 <template>
-<img :width="size" :height="size" :src="src">
+<img :width="size" :height="size" :src="src" :class="classNames" :alt="altAttr">
 </template>
 
 <script>
@@ -28,10 +28,11 @@ function shapeToPath(shape) {
 }
 
 export default {
-    name: 'Icon',
+    name: 'studip-icon',
     props: {
         alt: {
-            type: String
+            type: String,
+            default: ''
         },
         role: {
             default: 'clickable',
@@ -46,20 +47,19 @@ export default {
         size: {
             type: Number,
             default: 16
-        },
-        title: {
-            type: String
         }
     },
 
     computed: {
-        alt() { return this.alt || this.title || '' },
-        src() { return `/images/icons/${roleToColor(this.role)}/${shapeToPath(this.shape)}.svg` }
+        altAttr() {
+            return typeof this.alt === 'string' ? this.alt : ''
+        },
+        classNames() {
+            return `icon-role-${this.role} icon-shape-${this.shape}`
+        },
+        src() {
+            return `${this.$studipAssetsPath}/images/icons/${roleToColor(this.role)}/${shapeToPath(this.shape)}.svg`
+        }
     }
 }
 </script>
-
-<style scoped>
-img {
-}
-</style>
