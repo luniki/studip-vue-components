@@ -1,5 +1,7 @@
 <template>
-<img :width="size" :height="size" :src="src" :class="classNames" :alt="altAttr">
+    <input v-if="input" type="image"
+                :width="size" :height="size" :src="src" :class="classNames" :alt="altAttr">
+    <img v-else :width="size" :height="size" :src="src" :class="classNames" :alt="altAttr">
 </template>
 
 <script>
@@ -33,6 +35,10 @@ export default {
         alt: {
             type: String,
             default: ''
+        },
+        input: {
+            type: Boolean,
+            default: false
         },
         role: {
             default: 'clickable',
